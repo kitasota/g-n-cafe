@@ -24,6 +24,8 @@ body{
 header{
   width:100%;
   height:80px;
+  position:relative;
+  z-index:9999;
 }
 
 #news-slider{
@@ -72,16 +74,20 @@ a { text-decoration: none; color: black;}
 
 .navigation {
   display:block;
-  width:60px;
+  width:50px;
+  display:absolute;
+  top:0px;
+  left:0px;
 }
 
 .navigation a {
     display: block;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
     color: black;
-    line-height:1;
-    transition:.5s all
+    line-height:44px;
+    transition:.5s all;
+    font-size:14px;
 }
 
 .navigation a:hover{
@@ -108,7 +114,7 @@ label {
     padding: 0;
     background :#F1E8D8;
     list-style: none;
-    width:150px;
+    width:120px;
 }
 
 .navigation li {
@@ -123,13 +129,13 @@ label {
 
 
 #menu_bar01:checked ~ #links01 li{
-    height: 54px;
+    height: 46px;
     opacity: 0.8;
 }
 
 .top-wrapper{
   width:100%;
-  margin:0 auto 0 auto;
+  margin:0 auto;
   padding-bottom:100px;
   height:680px;
 }
@@ -2122,7 +2128,7 @@ footer{
       padding: 0;
       background :#F1E8D8;
       list-style: none;
-      width:120px;
+      width:110px;
   }
   
   .navigation li {
@@ -2137,7 +2143,7 @@ footer{
   
   
   #menu_bar01:checked ~ #links01 li{
-      height: 36px;
+      height: 34px;
       opacity: 0.8;
   }
   
@@ -2946,7 +2952,7 @@ footer{
   
   .top-information{
     padding:10px 0 0 0px;
-    transform: translate3d(190px,-150px,0);
+    transform: translate3d(180px,-150px,0);
   }
   
   .top-adoless{
@@ -2998,6 +3004,7 @@ footer{
   
   .top-right{
     width:100%;
+    transform: translateX(0px);
   }
   
   .screen-wrapper{
@@ -3010,20 +3017,20 @@ footer{
   }
   
   .thumb-item li a img{
-    width:300px;
+    width:350px;
     height:380px;
     object-fit: cover;
   }
   
   .thumb-item-nav{
-    transform:translate3d(380px,-350px,0);
+    transform:translate3d(390px,-350px,0);
     border-left:1px solid #808080;
     width:200px;
   }
   
   .time-background{
     position:absolute;
-    left:335px;
+    left:345px;
     top:16px;
   }
   
@@ -3101,8 +3108,8 @@ footer{
     -webkit-mask-size: cover;
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
-    mask-size: 300px 380px;
-    -webkit-mask-size: 300px 380px;
+    mask-size: 350px 380px;
+    -webkit-mask-size: 350px 380px;
   }
   
   .row-line{
@@ -3131,7 +3138,7 @@ footer{
   }
   
   .subscribe-wrapper{
-    transform: translate3d(260px,-320px,0);
+    transform: translate3d(250px,-320px,0);
     width:220px;
     background-color:#F1E8D8;
     border-radius:30px;
@@ -3326,6 +3333,428 @@ footer{
 }
 
 @media screen and (max-width:550px){
+  .post-number{
+    font-size:13px;
+    line-height:13px;
+    letter-spacing: 0px;
+  }
+  
+  .top-adoless{
+    padding:6px 0;
+  }
+  
+  .top-adoless-right p{
+    font-size:13px;
+    line-height:13px;
+    letter-spacing: 0px;
+  }
+  
+  .top-tel{
+    font-size:13px;
+    line-height:13px;
+    letter-spacing:0px;
+    padding: 6px 0;
+  }
+  
+  .top-logo-wrapper1{
+    width:100%;
+    height:auto;
+  }
+  
+  .top-logo1{
+    width:120px;
+    height:auto;
+    transform: translateX(30px);
+  }
+  
+  .top-information{
+    padding:10px 0 0 0px;
+    transform: translate3d(180px,-150px,0);
+  }
+  
+  .top-adoless{
+    display:flex;
+  }
+  
+  .top-adoless-right{
+    padding-left:20px;
+  }
+  
+  .tel{
+    padding-right:15px;
+  }
+  
+  .top-time{
+    padding: 6px 0;
+  }
+  
+  .open{
+    font-size:13px;
+    letter-spacing: 0px;
+    line-height: 13px;
+  }
+  
+  .open-time-right p{
+    font-size:13px;
+    letter-spacing: 0px;
+    line-height: 13px;
+  }
+  
+  .night-cafe p{
+    font-size:13px;
+    line-height:13px;
+    letter-spacing:0px;
+  }
+  
+  .top-time{
+    display:flex;
+  }
+  
+  .open-time{
+    display:flex;
+    padding-right:4px;
+  }
+  
+  .open{
+    padding-right:8px;
+  }
+  
+  .top-right{
+    width:100%;
+  }
+  
+  .screen-wrapper{
+    position:relative;
+  }
+  
+  
+  .thumb-item{
+    object-fit: cover;
+  }
+  
+  .thumb-item li a img{
+    width:320px;
+    height:360px;
+    object-fit: cover;
+  }
+  
+  .thumb-item-nav{
+    transform:translate3d(390px,-350px,0);
+    border-left:1px solid #808080;
+    width:200px;
+  }
+  
+  .time-background{
+    position:absolute;
+    left:345px;
+    top:-5px;
+  }
+  
+  .schedule-time{
+    font-size:14px;
+  }
+  
+  .first-time{
+    height:60px;
+  }
+  
+  .second-time{
+    height:30px;
+  }
+  
+  .third-time{
+    height:60px;
+  }
+  
+  .fourth-time{
+    height:60px;
+  }
+  
+  .fifth-time{
+    height:30px;
+  }
+  
+  .sixth-time{
+    height:60px;
+  }
+  
+  .seventh-time{
+    height:60px;
+  }
+  
+  .thumbnail-item{
+    transition:.4s all;
+  }
+  
+  .thumbnail-item:hover{
+    cursor:pointer;
+    padding-left:10px;
+  }
+  
+  .first-li{
+    line-height:60px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .second-li{
+    line-height:60px;
+    margin-top:30px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .third-li{
+    line-height:60px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .fourth-li{
+    margin-top:30px;
+    line-height:60px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .slide-item{
+    mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    -webkit-mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 320px 360px;
+    -webkit-mask-size: 320px 360px;
+  }
+  
+  .row-line{
+    font-size:20px;
+  }
+  
+  .slick-slide a{
+    outline:none;
+  }
+  
+  .slick-slide{
+    outline:none;
+  }
+  
+  .thumbnail-current a{
+    color:#9B7F2B;
+   }
+  
+  .thumbnail-current{
+    border-left:4px solid #9B7F2B;
+    padding-left:10px;
+  }
+
+  .subcribe-wrapper p{
+    font-size:13px;
+  }
+  
+  .subscribe-wrapper{
+    transform: translate3d(250px,-300px,0);
+    width:220px;
+    background-color:#F1E8D8;
+    border-radius:30px;
+    padding:10px;
+  }
+  
+  .top-icon-wrapper .fa-line{
+    padding-left:20px;
+    font-size:17px;
+  }
+  
+  .top-icon-wrapper .fa-instagram{
+    padding-left:70px;
+    font-size:17px;
+  }
+
+  #news-slider{
+    position:absolute;
+    top:-30px;
+    left:60%;
+    width:150px;
+  }
+  
+  .news-slider-date{
+    font-size:12px;
+    padding-bottom:3px;
+  }
+  
+  .news-slider-title{
+    padding-top:3px;
+    font-size:14px;
+    border-top:1px solid black;
+>>>>>>> temp
+  }
+
+  #news-slider{
+    position:absolute;
+    top:-30px;
+    left:60%;
+    width:150px;
+  }
+  
+  .news-slider-date{
+    font-size:12px;
+    padding-bottom:3px;
+  }
+  
+  .news-slider-title{
+    padding-top:3px;
+    font-size:14px;
+    border-top:1px solid black;
+  }
+
+  .menu-title{
+    margin-bottom:50px;
+  }
+  
+  .menu-heading{
+    text-align:center;
+  }
+  
+  .menu-wrapper{
+    width:100%;
+    border-top:1px solid #9B7F2B;
+    height:1250px;
+  }
+  
+  .swiper-container {
+    width: 70%;
+  }
+  
+  .slider {
+    height:auto;
+  }
+  
+  .swiper-wrapper{
+    display:flex;
+    flex-direction: row;
+  
+  }
+  
+  .swiper-slide img{
+    width:320px;
+    height:270px;
+    margin-bottom:50px;
+    object-fit: cover;
+  }
+    
+  .slider-thumbnail {
+    width:480px;
+  }
+        
+  .swiper-wrapper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    text-align:center;
+  }
+  
+  .slider{
+    mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    -webkit-mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 280px 250px;
+    -webkit-mask-size: 280px 250px;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+  }
+  
+  .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  #click1{
+    color:#9B7F2B;
+  }
+  
+  #click1,#click2,#click3,#click4,#click5{
+    font-weight:600;
+    font-size:13px;
+    padding:0;
+    margin:0;
+    height:40px;
+    transition:.5s all;
+  }
+  
+  #click1:hover,#click2:hover,#click3:hover,#click4:hover,#click5:hover{
+    font-size:14px;
+    cursor: pointer;
+  }
+  
+  
+  #text2,#text3,#text4,#text5{
+    display:none;
+  }
+  
+  #text1,#text2,#text3,#text4,#text5{
+    padding-top:40px;
+    width:580px;
+    height:250px;
+    font-size:13px;
+    line-height:24px;
+    transform: translateX(-50px);
+  }
+  
+  .concept-heading{
+    text-align:center;
+  }
+  
+  .dessert-heading{
+    text-align:center;
+  }
+  
+  #slide2{
+    position:relative;
+  }
+  
+  #slide2 img{
+    position:absolute;
+    left:50%;
+    transform: translateX(-150px);
+    top:30px;
+    width:300px;
+    height:250px;
+    object-fit: cover;
+    mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    -webkit-mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 300px 250px;
+    -webkit-mask-size: 300px 250px;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+  }
+  
+  .dessert-wrapper{
+    padding:20px 0 ;
+  }
+  
+  .dessert-heading h3{
+    font-size:16px;
+  }
+  
+  .dessert-text{
+    transform: translateY(340px);
+    width:480px;
+    padding-left:8px;
+    margin:0 auto;
+    line-height:24px;
+  }
+  
+  .dessert-text p{
+    font-size:13px;
+  }
+}
+
+@media screen and (max-width:500px){
   .top-wrapper{
     height:830px;
   }
@@ -3360,8 +3789,8 @@ footer{
   }
   
   .post-number{
-    font-size:14px;
-    line-height:14px;
+    font-size:12px;
+    line-height:12px;
     letter-spacing: 0px;
   }
   
@@ -3370,14 +3799,14 @@ footer{
   }
   
   .top-adoless-right p{
-    font-size:14px;
-    line-height:14px;
+    font-size:12px;
+    line-height:12px;
     letter-spacing: 0px;
   }
   
   .top-tel{
-    font-size:14px;
-    line-height:15px;
+    font-size:12px;
+    line-height:12px;
     letter-spacing:0px;
     padding: 6px 0;
   }
@@ -3388,14 +3817,14 @@ footer{
   }
   
   .top-logo1{
-    width:125px;
+    width:120px;
     height:auto;
-    transform: translateX(50px);
+    transform: translateX(20px);
   }
   
   .top-information{
     padding:10px 0 0 0px;
-    transform: translate3d(175px,-150px,0);
+    transform: translate3d(160px,-150px,0);
   }
   
   .top-adoless{
@@ -3415,20 +3844,475 @@ footer{
   }
   
   .open{
-    font-size:14px;
+    font-size:12px;
     letter-spacing: 0px;
-    line-height: 14px;
+    line-height: 12px;
   }
   
   .open-time-right p{
-    font-size:14px;
+    font-size:12px;
     letter-spacing: 0px;
-    line-height: 14px;
+    line-height: 12px;
   }
   
   .night-cafe p{
+    font-size:12px;
+    line-height:12px;
+    letter-spacing:0px;
+  }
+  
+  .top-time{
+    display:flex;
+  }
+  
+  .open-time{
+    display:flex;
+    padding-right:4px;
+  }
+  
+  .open{
+    padding-right:8px;
+  }
+  
+  .top-right{
+    width:100%;
+  }
+  
+  .screen-wrapper{
+    position:relative;
+  }
+  
+  
+  .thumb-item{
+    object-fit: cover;
+  }
+  
+  .thumb-item li a img{
+    width:320px;
+    height:360px;
+    object-fit: cover;
+  }
+  
+  .thumb-item-nav{
+    transform:translate3d(350px,-350px,0);
+    border-left:1px solid #808080;
+    width:200px;
+  }
+  
+  .time-background{
+    position:absolute;
+    left:305px;
+    top:-5px;
+  }
+  
+  .schedule-time{
     font-size:14px;
-    line-height:14px;
+  }
+  
+  .first-time{
+    height:60px;
+  }
+  
+  .second-time{
+    height:30px;
+  }
+  
+  .third-time{
+    height:60px;
+  }
+  
+  .fourth-time{
+    height:60px;
+  }
+  
+  .fifth-time{
+    height:30px;
+  }
+  
+  .sixth-time{
+    height:60px;
+  }
+  
+  .seventh-time{
+    height:60px;
+  }
+  
+  .thumbnail-item{
+    transition:.4s all;
+  }
+  
+  .thumbnail-item:hover{
+    cursor:pointer;
+    padding-left:10px;
+  }
+  
+  .first-li{
+    line-height:60px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .second-li{
+    line-height:60px;
+    margin-top:30px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .third-li{
+    line-height:60px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .fourth-li{
+    margin-top:30px;
+    line-height:60px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .slide-item{
+    mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    -webkit-mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 320px 360px;
+    -webkit-mask-size: 320px 360px;
+  }
+  
+  .row-line{
+    font-size:20px;
+  }
+  
+  .slick-slide a{
+    outline:none;
+  }
+  
+  .slick-slide{
+    outline:none;
+  }
+  
+  .thumbnail-current a{
+    color:#9B7F2B;
+   }
+  
+  .thumbnail-current{
+    border-left:4px solid #9B7F2B;
+    padding-left:10px;
+  }
+
+  .subcribe-wrapper p{
+    font-size:13px;
+  }
+  
+  .subscribe-wrapper{
+    transform: translate3d(210px,-300px,0);
+    width:220px;
+    background-color:#F1E8D8;
+    border-radius:30px;
+    padding:10px;
+  }
+  
+  .top-icon-wrapper .fa-line{
+    padding-left:20px;
+    font-size:17px;
+  }
+  
+  .top-icon-wrapper .fa-instagram{
+    padding-left:70px;
+    font-size:17px;
+  }
+
+  #news-slider{
+    position:absolute;
+    top:-30px;
+    left:60%;
+    width:150px;
+  }
+  
+  .news-slider-date{
+    font-size:12px;
+    padding-bottom:3px;
+  }
+  
+  .news-slider-title{
+    padding-top:3px;
+    font-size:14px;
+    border-top:1px solid black;
+  }
+
+  #news-slider{
+    position:absolute;
+    top:-30px;
+    left:60%;
+    width:150px;
+  }
+  
+  .news-slider-date{
+    font-size:12px;
+    padding-bottom:3px;
+  }
+  
+  .news-slider-title{
+    padding-top:3px;
+    font-size:14px;
+    border-top:1px solid black;
+  }
+
+  .menu-title{
+    margin-bottom:50px;
+  }
+  
+  .menu-heading{
+    text-align:center;
+  }
+  
+  .menu-wrapper{
+    width:100%;
+    border-top:1px solid #9B7F2B;
+    height:1250px;
+  }
+  
+  .swiper-container {
+    width: 100%;
+  }
+  
+  .slider {
+    height:auto;
+  }
+  
+  .swiper-wrapper{
+    display:flex;
+    flex-direction: row;
+  
+  }
+  
+  .swiper-slide img{
+    width:320px;
+    height:270px;
+    margin-bottom:50px;
+    object-fit: cover;
+  }
+    
+  .slider-thumbnail {
+    width:430px;
+  }
+        
+  .swiper-wrapper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    text-align:center;
+  }
+  
+  .slider{
+    mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    -webkit-mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 280px 250px;
+    -webkit-mask-size: 280px 250px;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+  }
+  
+  .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  #click1{
+    color:#9B7F2B;
+  }
+  
+  #click1,#click2,#click3,#click4,#click5{
+    font-weight:600;
+    font-size:13px;
+    padding:0;
+    margin:0;
+    height:40px;
+    transition:.5s all;
+  }
+  
+  #click1:hover,#click2:hover,#click3:hover,#click4:hover,#click5:hover{
+    font-size:14px;
+    cursor: pointer;
+  }
+  
+  
+  #text2,#text3,#text4,#text5{
+    display:none;
+  }
+  
+  #text1,#text2,#text3,#text4,#text5{
+    padding-top:40px;
+    width:530px;
+    height:250px;
+    font-size:13px;
+    line-height:24px;
+    transform: translateX(-50px);
+  }
+  
+  .concept-heading{
+    text-align:center;
+  }
+  
+  .dessert-heading{
+    text-align:center;
+  }
+  
+  #slide2{
+    position:relative;
+  }
+  
+  #slide2 img{
+    position:absolute;
+    left:50%;
+    transform: translateX(-150px);
+    top:30px;
+    width:300px;
+    height:250px;
+    object-fit: cover;
+    mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    -webkit-mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 300px 250px;
+    -webkit-mask-size: 300px 250px;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+  }
+  
+  .dessert-wrapper{
+    padding:20px 0 ;
+  }
+  
+  .dessert-heading h3{
+    font-size:16px;
+  }
+  
+  .dessert-text{
+    transform: translateY(340px);
+    width:430px;
+    padding-left:8px;
+    margin:0 auto;
+    line-height:24px;
+  }
+  
+  .dessert-text p{
+    font-size:13px;
+  }
+  
+}
+
+@media screen and (max-width:450px){
+  .top-wrapper{
+    height:830px;
+  }
+
+  .top-left{
+    width:100%;
+    transform: translateY(-280px);
+  }
+  
+  .gene:before{
+    content:"”";
+    font-size:26px;
+    color:#9B7F2B;
+  }
+  
+  .gene:after{
+    content:"”";
+    font-size:26px;
+    color:#9B7F2B;
+  }
+  
+  .top-heading p{
+    font-size:16px;
+    padding:0;
+    margin:0;
+    line-height:26px;
+    letter-spacing: 1px;
+  }
+
+  .top-information{
+    width:370px;
+  }
+  
+  .post-number{
+    font-size:12px;
+    line-height:12px;
+    letter-spacing: 0px;
+  }
+  
+  .top-adoless{
+    padding:6px 0;
+  }
+  
+  .top-adoless-right p{
+    font-size:12px;
+    line-height:12px;
+    letter-spacing: 0px;
+  }
+  
+  .top-tel{
+    font-size:12px;
+    line-height:12px;
+    letter-spacing:0px;
+    padding: 6px 0;
+  }
+  
+  .top-logo-wrapper1{
+    width:100%;
+    height:auto;
+  }
+  
+  .top-logo1{
+    width:100px;
+    height:auto;
+    transform: translateX(10px);
+  }
+  
+  .top-information{
+    padding:10px 0 0 0px;
+    transform: translate3d(120px,-130px,0);
+  }
+  
+  .top-adoless{
+    display:flex;
+  }
+  
+  .top-adoless-right{
+    padding-left:20px;
+  }
+  
+  .tel{
+    padding-right:15px;
+  }
+  
+  .top-time{
+    padding: 6px 0;
+  }
+  
+  .open{
+    font-size:12px;
+    letter-spacing: 0px;
+    line-height: 12px;
+  }
+  
+  .open-time-right p{
+    font-size:12px;
+    letter-spacing: 0px;
+    line-height: 12px;
+  }
+  
+  .night-cafe p{
+    font-size:12px;
+    line-height:12px;
     letter-spacing:0px;
   }
   
@@ -3465,14 +4349,14 @@ footer{
   }
   
   .thumb-item-nav{
-    transform:translate3d(350px,-350px,0);
+    transform:translate3d(300px,-350px,0);
     border-left:1px solid #808080;
     width:200px;
   }
   
   .time-background{
     position:absolute;
-    left:305px;
+    left:255px;
     top:-5px;
   }
   
@@ -3576,11 +4460,11 @@ footer{
   }
 
   .subcribe-wrapper p{
-    font-size:13px;
+    font-size:12px;
   }
   
   .subscribe-wrapper{
-    transform: translate3d(210px,-300px,0);
+    transform: translate3d(160px,-300px,0);
     width:220px;
     background-color:#F1E8D8;
     border-radius:30px;
@@ -3589,31 +4473,12 @@ footer{
   
   .top-icon-wrapper .fa-line{
     padding-left:20px;
-    font-size:17px;
+    font-size:16px;
   }
   
   .top-icon-wrapper .fa-instagram{
     padding-left:70px;
-    font-size:17px;
-  }
-
-  #news-slider{
-    position:absolute;
-    top:-30px;
-    left:60%;
-    width:150px;
-  }
-  
-  .news-slider-date{
-    font-size:12px;
-    padding-bottom:3px;
-  }
-  
-  .news-slider-title{
-    padding-top:3px;
-    font-size:14px;
-    border-top:1px solid black;
->>>>>>> temp
+    font-size:16px;
   }
 
   #news-slider{
@@ -3633,7 +4498,657 @@ footer{
     font-size:14px;
     border-top:1px solid black;
   }
+
+  #news-slider{
+    position:absolute;
+    top:-30px;
+    left:60%;
+    width:150px;
+  }
   
+  .news-slider-date{
+    font-size:12px;
+    padding-bottom:3px;
+  }
+  
+  .news-slider-title{
+    padding-top:3px;
+    font-size:14px;
+    border-top:1px solid black;
+  }
+
+  .menu-title{
+    margin-bottom:50px;
+  }
+  
+  .menu-heading{
+    text-align:center;
+  }
+  
+  .menu-wrapper{
+    width:100%;
+    border-top:1px solid #9B7F2B;
+    height:1250px;
+  }
+  
+  .swiper-container {
+    width: 100%;
+  }
+  
+  .slider {
+    height:auto;
+  }
+  
+  .swiper-wrapper{
+    display:flex;
+    flex-direction: row;
+  
+  }
+  
+  .swiper-slide img{
+    width:320px;
+    height:270px;
+    margin-bottom:50px;
+    object-fit: cover;
+  }
+    
+  .slider-thumbnail {
+    width:420px;
+  }
+        
+  .swiper-wrapper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    text-align:center;
+  }
+  
+  .slider{
+    mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    -webkit-mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 280px 250px;
+    -webkit-mask-size: 280px 250px;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+  }
+  
+  .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  #click1{
+    color:#9B7F2B;
+  }
+  
+  #click1,#click2,#click3,#click4,#click5{
+    font-weight:600;
+    font-size:13px;
+    padding:0;
+    margin:0;
+    height:40px;
+    transition:.5s all;
+  }
+  
+  #click1:hover,#click2:hover,#click3:hover,#click4:hover,#click5:hover{
+    font-size:14px;
+    cursor: pointer;
+  }
+  
+  
+  #text2,#text3,#text4,#text5{
+    display:none;
+  }
+  
+  #text1,#text2,#text3,#text4,#text5{
+    padding-top:40px;
+    width:500px;
+    height:250px;
+    font-size:13px;
+    line-height:24px;
+    transform: translateX(-50px);
+  }
+  
+  .concept-heading{
+    text-align:center;
+  }
+  
+  .dessert-heading{
+    text-align:center;
+  }
+  
+  #slide2{
+    position:relative;
+  }
+  
+  #slide2 img{
+    position:absolute;
+    left:50%;
+    transform: translateX(-150px);
+    top:30px;
+    width:300px;
+    height:250px;
+    object-fit: cover;
+    mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    -webkit-mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 300px 250px;
+    -webkit-mask-size: 300px 250px;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+  }
+  
+  .dessert-wrapper{
+    padding:20px 0 ;
+  }
+  
+  .dessert-heading h3{
+    font-size:16px;
+  }
+  
+  .dessert-text{
+    transform: translateY(340px);
+    width:380px;
+    padding-left:8px;
+    margin:0 auto;
+    line-height:24px;
+  }
+  
+  .dessert-text p{
+    font-size:13px;
+  }
+
+  .post{
+    width:95%;
+  }
+
+  .information-left{
+    width:95%;
+  }
+
+  .information-right{
+    width:95%;
+  }
+
+ 
+}
+
+@media screen and (max-width:400px){
+  .top-wrapper{
+    height:780px;
+  }
+
+  .top-left{
+    width:100%;
+    transform: translateY(-250px);
+  }
+  
+  .gene:before{
+    content:"”";
+    font-size:26px;
+    color:#9B7F2B;
+  }
+  
+  .gene:after{
+    content:"”";
+    font-size:26px;
+    color:#9B7F2B;
+  }
+  
+  .top-heading p{
+    font-size:16px;
+    padding:0;
+    margin:0;
+    line-height:26px;
+    letter-spacing: 1px;
+  }
+
+  .top-information{
+    width:370px;
+  }
+  
+  .post-number{
+    font-size:12px;
+    line-height:12px;
+    letter-spacing: 0px;
+  }
+  
+  .top-adoless{
+    padding:6px 0;
+  }
+  
+  .top-adoless-right p{
+    font-size:12px;
+    line-height:12px;
+    letter-spacing: 0px;
+  }
+  
+  .top-tel{
+    font-size:12px;
+    line-height:12px;
+    letter-spacing:0px;
+    padding: 6px 0;
+  }
+  
+  .top-logo-wrapper1{
+    width:100%;
+    height:auto;
+  }
+  
+  .top-logo1{
+    width:80px;
+    height:auto;
+    transform: translateX(10px);
+  }
+  
+  .top-information{
+    padding:10px 0 0 0px;
+    transform: translate3d(100px,-110px,0);
+  }
+  
+  .top-adoless{
+    display:flex;
+  }
+  
+  .top-adoless-right{
+    padding-left:20px;
+  }
+  
+  .tel{
+    padding-right:15px;
+  }
+  
+  .top-time{
+    padding: 6px 0;
+  }
+  
+  .open{
+    font-size:12px;
+    letter-spacing: 0px;
+    line-height: 12px;
+  }
+  
+  .open-time-right p{
+    font-size:12px;
+    letter-spacing: 0px;
+    line-height: 12px;
+  }
+  
+  .night-cafe p{
+    font-size:12px;
+    line-height:12px;
+    letter-spacing:0px;
+  }
+  
+  .top-time{
+    display:flex;
+  }
+  
+  .open-time{
+    display:flex;
+    padding-right:4px;
+  }
+  
+  .open{
+    padding-right:8px;
+  }
+  
+  .top-right{
+    width:100%;
+    transform: translateX(-20px);
+  }
+  
+  .screen-wrapper{
+    position:relative;
+  }
+  
+  
+  .thumb-item{
+    object-fit: cover;
+  }
+  
+  .thumb-item li a img{
+    width:280px;
+    height:360px;
+    object-fit: cover;
+  }
+  
+  .thumb-item-nav{
+    transform:translate3d(285px,-350px,0);
+    border-left:1px solid #808080;
+    width:200px;
+  }
+  
+  .time-background{
+    position:absolute;
+    left:241px;
+    top:-5px;
+  }
+  
+  .schedule-time{
+    font-size:14px;
+  }
+  
+  .first-time{
+    height:60px;
+  }
+  
+  .second-time{
+    height:30px;
+  }
+  
+  .third-time{
+    height:60px;
+  }
+  
+  .fourth-time{
+    height:60px;
+  }
+  
+  .fifth-time{
+    height:30px;
+  }
+  
+  .sixth-time{
+    height:60px;
+  }
+  
+  .seventh-time{
+    height:60px;
+  }
+  
+  .thumbnail-item{
+    transition:.4s all;
+  }
+  
+  .thumbnail-item:hover{
+    cursor:pointer;
+    padding-left:10px;
+  }
+  
+  .first-li{
+    line-height:60px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .second-li{
+    line-height:60px;
+    margin-top:30px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .third-li{
+    line-height:60px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .fourth-li{
+    margin-top:30px;
+    line-height:60px;
+    padding-left:5px;
+    border-left:1px solid black;
+  }
+  
+  .slide-item{
+    mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    -webkit-mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 280px 360px;
+    -webkit-mask-size: 280px 360px;
+  }
+  
+  .row-line{
+    font-size:20px;
+  }
+  
+  .slick-slide a{
+    outline:none;
+  }
+  
+  .slick-slide{
+    outline:none;
+  }
+  
+  .thumbnail-current a{
+    color:#9B7F2B;
+   }
+  
+  .thumbnail-current{
+    border-left:4px solid #9B7F2B;
+    padding-left:10px;
+  }
+
+  .subcribe-wrapper p{
+    font-size:12px;
+  }
+  
+  .subscribe-wrapper{
+    transform: translate3d(160px,-300px,0);
+    width:220px;
+    background-color:#F1E8D8;
+    border-radius:30px;
+    padding:10px;
+  }
+  
+  .top-icon-wrapper .fa-line{
+    padding-left:20px;
+    font-size:16px;
+  }
+  
+  .top-icon-wrapper .fa-instagram{
+    padding-left:70px;
+    font-size:16px;
+  }
+
+  .concept-text p{
+    font-size:13px;
+  }
+
+  #news-slider{
+    position:absolute;
+    top:-30px;
+    left:60%;
+    width:150px;
+  }
+  
+  .news-slider-date{
+    font-size:12px;
+    padding-bottom:3px;
+  }
+  
+  .news-slider-title{
+    padding-top:3px;
+    font-size:14px;
+    border-top:1px solid black;
+  }
+
+  #news-slider{
+    position:absolute;
+    top:-30px;
+    left:60%;
+    width:150px;
+  }
+  
+  .news-slider-date{
+    font-size:12px;
+    padding-bottom:3px;
+  }
+  
+  .news-slider-title{
+    padding-top:3px;
+    font-size:14px;
+    border-top:1px solid black;
+  }
+
+  .menu-title{
+    margin-bottom:50px;
+  }
+  
+  .menu-heading{
+    text-align:center;
+  }
+  
+  .menu-wrapper{
+    width:100%;
+    border-top:1px solid #9B7F2B;
+    height:1250px;
+  }
+  
+  .swiper-container {
+    width: 100%;
+  }
+  
+  .slider {
+    height:auto;
+  }
+  
+  .swiper-wrapper{
+    display:flex;
+    flex-direction: row;
+  
+  }
+  
+  .swiper-slide img{
+    width:320px;
+    height:270px;
+    margin-bottom:50px;
+    object-fit: cover;
+  }
+    
+  .slider-thumbnail {
+    width:395px;
+  }
+        
+  .swiper-wrapper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    text-align:center;
+  }
+  
+  .slider{
+    mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    -webkit-mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 280px 250px;
+    -webkit-mask-size: 280px 250px;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+  }
+  
+  .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  #click1{
+    color:#9B7F2B;
+  }
+  
+  #click1,#click2,#click3,#click4,#click5{
+    font-weight:600;
+    font-size:13px;
+    padding:0;
+    margin:0;
+    height:40px;
+    transition:.5s all;
+  }
+  
+  #click1:hover,#click2:hover,#click3:hover,#click4:hover,#click5:hover{
+    font-size:13px;
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+  
+  
+  #text2,#text3,#text4,#text5{
+    display:none;
+  }
+  
+  #text1,#text2,#text3,#text4,#text5{
+    padding-top:40px;
+    width:475px;
+    height:250px;
+    font-size:13px;
+    line-height:24px;
+    transform: translateX(-50px);
+  }
+  
+  .concept-heading{
+    text-align:center;
+  }
+  
+  .dessert-heading{
+    text-align:center;
+  }
+  
+  #slide2{
+    position:relative;
+  }
+  
+  #slide2 img{
+    position:absolute;
+    left:50%;
+    transform: translateX(-150px);
+    top:30px;
+    width:300px;
+    height:250px;
+    object-fit: cover;
+    mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    -webkit-mask-image: url(https://cafe-steen.com/common/img/mask_scene.png);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 300px 250px;
+    -webkit-mask-size: 300px 250px;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+  }
+  
+  .dessert-wrapper{
+    padding:20px 0 ;
+  }
+  
+  .dessert-heading h3{
+    font-size:16px;
+  }
+  
+  .dessert-text{
+    transform: translateY(340px);
+    width:380px;
+    padding-left:8px;
+    margin:0 auto;
+    line-height:24px;
+  }
+  
+  .dessert-text p{
+    font-size:13px;
+  }
+
+  .post{
+    width:95%;
+  }
+
+  .information-left{
+    width:95%;
+  }
+
+  .information-right{
+    width:95%;
+  }
+
+ 
 }
 
 
@@ -3651,16 +5166,3 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> temp
