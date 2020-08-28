@@ -288,19 +288,18 @@ footer{
 }
 
 .post_date{
-  padding-right:80px;
   font-size:15px;
 }
 
 .share{
-  padding-right:10px;
+  padding-left:60px;
   font-size:18px;
   line-height:20px;
 }
 
 .post_icon{
+  padding-left:20px;
   font-size:22px;
-  padding:15px;
 }
 
 .post_text p{
@@ -417,3 +416,10 @@ footer{
   }
 
 }
+
+@media screen and (max-width:480px){
+  .top-wrapper{
+    padding:0 0px;
+  }
+}
+
