@@ -45,7 +45,7 @@ a { text-decoration: none; color: black;}
   width:100%;
   margin:0 auto 0 auto;
   padding-bottom:100px;
-  height:1600px;
+  height:2000px;
 }
 
 .top-wrapper .container{
@@ -276,7 +276,7 @@ footer{
 }
 
 .post_heading img{
-  width:100%;
+  width:90%;
   height:auto;
   border-radius:20px;
 }
@@ -305,6 +305,12 @@ footer{
 .post_text p{
   padding:15px 0;
   letter-spacing: 1px;
+}
+
+.post_text img{
+  padding-top:50px;
+  width:100%;
+  height:auto;
 }
 
 .virus-wrapper{
