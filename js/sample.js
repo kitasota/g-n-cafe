@@ -172,6 +172,7 @@ $(function(){
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      followFinger: false,
       thumbs: {
         swiper: sliderThumbnail
       }

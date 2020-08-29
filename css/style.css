@@ -138,6 +138,7 @@ label {
   margin:0 auto;
   padding-bottom:100px;
   height:680px;
+  overflow: hidden;
 }
 
 .top-wrapper .container{
