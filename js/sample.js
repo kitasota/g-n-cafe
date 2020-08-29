@@ -168,10 +168,6 @@ $(function(){
     });
 
     var slider = new Swiper('.slider', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
       followFinger: false,
       thumbs: {
         swiper: sliderThumbnail
