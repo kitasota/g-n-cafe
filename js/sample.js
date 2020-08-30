@@ -168,7 +168,10 @@ $(function(){
     });
 
     var slider = new Swiper('.slider', {
+      touchMove :false,
       followFinger: false,
+      accessibility:false,
+      swipe:false,
       thumbs: {
         swiper: sliderThumbnail
       }
